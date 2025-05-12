@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Italianno&display=swap');
+
+body{
+    background-color: #FF90BB;
+    overflow: hidden;
+}
+
+.kado1, .kado2{
+    position: absolute;
+    height: 100%;
+    bottom: -32%;
+    right: -26%;
+    animation: InPresent 4s ease;
+}
+
+.kado2{
+    bottom: -32%;
+    right: 44%;
+}
+
+@keyframes InPresent{
+    from{
+        transform: translateX(0%);
+    }
+    to{
+        transform: translateX(0%);
+    }
+}
+
+.paper_outside{
+    position: absolute;
+    border-radius: 3%;
+    left: 35.5%;
+    bottom: 25%;
+    background-color: #F8F8E1;
+    height: 68%;
+    width: 27%;
+    padding: 1;
+    transform-style: preserve-3d;
+    transform-origin: left center;
+    z-index: 2000;
+    animation: FlipPaper 4s ease forwards;
+}
+
+.header{
+    position: absolute;
+    font-family: "Fredoka", sans-serif;
+    color: #8ACCD5;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.kue{
+    position: absolute;
+    width: 240%;
+    bottom: -25%;
+    left: -69%;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5%;
+}
+
+@keyframes FlipPaper{
+    from{
+        transform: rotateY(0deg);
+    }
+    to{
+        transform: rotateY(-160deg);
+    }
+}
+
+.paper_inside{
+    position: absolute;
+    border-radius: 3%;
+    left: 35.5%;
+    bottom: 25%;
+    background-color: #F8F8E1;
+    height: 68%;
+    width: 27%;
+    padding: 1;
+}
+
+.background_insider2{
+    position: absolute;
+    border-radius: 3%;
+    left: 5%;
+    bottom: 5%;
+    background-color: #B7825F;
+    height: 90%;
+    width: 90%;
+    padding: 1;
+
+}
+
+.header2{
+    position: absolute;
+    top: -12%;
+    left: 26%;
+    font-family: "Italianno", cursive;
+    color: snow;
+    font-size: 320%;
+}
+
+.latter{
+    position: absolute;
+    top: -18%;
+    right: -110%;
+    height: 135%;
+    opacity: 0;
+    animation: FadeInLatter 5s ease forwards;
+}
+
+@keyframes FadeInLatter{
+    from{
+        transform: translateX(-50%);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
+
+.cover{
+    position: absolute;
+    left: 21%;
+    top: 22%;
+    height: 50%;
+    border-radius: 5%;
+}
+
+audio{
+    position: absolute;
+    bottom: 5%;
+    left: 3%;
+    z-index: 2200;
+    opacity: 0;
+    animation: FadeInAudio 15s ease forwards;
+}
+
+@keyframes FadeInAudio{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+.left_arrow{
+    position: absolute;
+    height: 20%;
+    z-index: 1000;
+    bottom: 5%;
+    right: 42%;
+    cursor: pointer;
+    padding: 0.5%;
+    animation: fadeInArrowRight 5s ease forwards;
+    animation-delay: 3s !important;
+    z-index: 5000;
+    opacity: 0;
+}
+
+@keyframes fadeInArrowRight{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+.retry{
+    height: 0%;
+    width: 5%;
+}
